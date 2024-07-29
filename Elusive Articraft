@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+         int sum=sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=i+0;j<n;j++){
+                if(a[i]==sum){
+                    System.out.println("Elusive Artifact Found!");
+                    return;
+                }
+            }
+        }
+        System.out.println("Elusive Artifact Not Found!");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
